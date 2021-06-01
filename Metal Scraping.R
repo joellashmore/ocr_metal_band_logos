@@ -55,7 +55,7 @@ angryBow
 
 
 BrvtalScraper <- function (x) {
-  dir.create("//Users/joellashmore/Downloads/scraped metal logos")
+  dir.create("//logo files")
   for (i in x[1:length(x)]) {
     pagephotos <- read_html(i) %>%
       html_nodes(".c_img")  %>%
